@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>Support Request Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar  -->
+    
+    <nav class=”navbar”>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form1.html">Request Form</a></li>
+            <li><a href="form2.html">Support Documentation</a></li>
+        </ul>
+    </nav>
+
+    
+    <!-- Request Form Section  -->
+    <div class=”form-container”>
+        <h1>Support Request Form</h1>
+        <form action=”#” method=”post” id=”supportRequestForm”>
+            <ul>
+                <li>
+                    <label for=”callDateTime”>Date and Time of Call/Ticket:</label>
+                    <input type=”datetime-local” id=”callDateTime” name=”callDateTime” required>
+                </li>
+                <li>
+                    <label for=”callerName”>Name and Surname of Caller:</label>
+                    <input type=”text” id=”callerName” name=”callerName” required placeholder=”Enter name and surname”>
+                </li>
+                <li>
+                    <label for=”callerDepartment”>Caller Department:</label>
+                    <input type=”text” id=”callerDepartment” name=”callerDepartment” required placeholder=”Enter department”>
+                </li>
+                <li>
+                    <label for=”incidentTitle”>Incident Title/Category:</label>
+                    <input type=”text” id=”incidentTitle” name=”incidentTitle” required placeholder=”Enter incident title or category”>
+                </li>
+                <li>
+                    <label for=”incidentDescription”>Incident Description:</label>
+                    <textarea id=”incidentDescription” name=”incidentDescription” required placeholder=”Describe the incident”></textarea>
+                </li>
+                <li>
+                    <label for=”urgency”>Urgency:</label>
+                    <select id=”urgency” name=”urgency” required>
+                        <option value=”Very urgent”>Very Urgent</option>
+                        <option value=”Average”>Average</option>
+                        <option value=”Not urgent”>Not Urgent</option>
+                    </select>
+                </li>
+                <li>
+                    <label for=”priority”>Priority:</label>
+                    <select id=”priority” name=”priority” required>
+                        <option value=”High”>High</option>
+                        <option value=”Medium”>Medium</option>
+                        <option value=”Low”>Low</option>
+                    </select>
+                </li>
+            </ul>
+            <button type=”submit”>Submit Request</button>
+        </form>
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+        <p>Contact Support: <a href=mailto:ithelp@techsupport.com>ithelp@techsupport.com</a></p>
+        <p>&copy; 2024 TechEon. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

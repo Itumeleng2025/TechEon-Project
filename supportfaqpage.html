@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>Support FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar  -->
+    <nav class=”navbar”>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="form1.html">Request Form</a></li>
+
+        <li><a href="form2.html">Support Documentation</a></li>
+</ul> 
+</nav>
+
+    <!-- FAQ Section  -->
+    <div class="faq-section">
+        <h1>Support FAQ</h1>
+
+        <div class="faq-item">
+            <button class="faq-question">1. How do I escalate a technical issue to senior management?</button>
+            <div class="faq-answer">
+                <p>To escalate a technical issue, ensure you have completed all standard troubleshooting steps. Document your findings, include relevant error logs, and submit a report through the escalation form on our support platform. If the issue remains unresolved, contact your direct supervisor for further assistance.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">2. What are the steps to verify a sales order before processing?</button>
+            <div class="faq-answer">
+                <p>Begin by cross-referencing the order details with the customer’s purchase history. Verify the product codes, quantities, and billing information. Finally, ensure the payment method is valid and authorized before processing the order in the system.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">3. What should I do if a request is outside the scope of our service?</button>
+            <div class="faq-answer">
+                <p>If a request is outside the scope, politely inform the customer and provide alternative resources if possible. Document the request and refer it to the relevant department for additional guidance if necessary.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <!-- Footer  -->
+    <footer>
+        <p>Contact Support: <a href=mailto:ithelp@techsupport.com>ithelp@techsupport.com</a></p>
+        <p>&copy; 2024 TechEon. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for FAQ Toggle  -->
+    <script>
+        Const faqQuestions = document.querySelectorAll(“.faq-question”);
+
+        faqQuestions.forEach(question => {
+            question.addEventListener(“click”, () => {
+                question.classList.toggle(“active”);
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === “block” ? “none” : “block”;
+            });
+        });
+    </script>
+
+</body>
+</html>
+
